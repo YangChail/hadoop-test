@@ -1,0 +1,3 @@
+org\conan\myhadoop\mr\WordCount.class
+org\conan\myhadoop\mr\WordCount$WordCountReducer.class
+org\conan\myhadoop\mr\WordCount$WordCountMapper.class
