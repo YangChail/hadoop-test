@@ -62,12 +62,15 @@ public class WordCount {
 		String output = hfdfhead + "/wc/out";
 		Path in = new Path(input);
 		Path out = new Path(output);
-		FileSystem fs = FileSystem.get(conf);
+		//Path in = new Path(args[0]);
+		//Path out = new Path(args[1]);
+		
+		FileSystem fs = out.getFileSystem(conf);
 		if (fs.exists(out)) {
 			fs.delete(out, true);
 		}
 
-		conf.setJobName("myWordCount");
+		conf.setJobName("my11");
 		// conf.addResource("classpath:/hadoop/core-site.xml");
 		// conf.addResource("classpath:/hadoop/hdfs-site.xml");
 		// conf.addResource("classpath:/hadoop/mapred-site.xml");
