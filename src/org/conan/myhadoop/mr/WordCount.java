@@ -71,8 +71,8 @@ public class WordCount {
 		}
 
 		conf.setJobName("my11");
-		// conf.addResource("classpath:/hadoop/core-site.xml");
-		// conf.addResource("classpath:/hadoop/hdfs-site.xml");
+		//conf.addResource("classpath:/hadoop/core-site.xml");
+		 //conf.addResource("classpath:/hadoop/hdfs-site.xml");
 		// conf.addResource("classpath:/hadoop/mapred-site.xml");
 
 		conf.setOutputKeyClass(Text.class);
